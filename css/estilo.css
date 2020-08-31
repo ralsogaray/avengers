@@ -1,0 +1,268 @@
+
+/********** GENERAL *******/
+/*{outline: 1px solid grey;}*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: url(../IMG/metal-pattern.jpg);
+}
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1,h2{
+    border-bottom: 1px solid #00BCD4;
+    padding-bottom: 8px;
+}
+p, ul, ol{
+    font-size: 14px;
+}
+p{
+    text-align: justify;
+}
+div{
+    box-sizing: border-box;
+}
+/******** pagina avengers *******/
+
+#barra-lateral{
+    width: 14%;
+    float: left;
+    padding: 0px 10px ;
+    
+    
+}
+#header{
+    width: 86%;
+    height: 220px;
+    background-image: url(../IMG/avengers-header.jpg);
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%;
+    background-position-x: center;
+}
+
+#cuerpo{
+    width: 86%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+#footer{
+    width: 100%;
+    float: left;
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+#barra-lateral img{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: purple 2px solid;
+    padding-bottom: 20px;
+    filter: drop-shadow(5px 5px 15px white);
+}
+#barra-lateral a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+#barra-lateral a:hover{
+    padding: 5px;
+    background-color: purple;
+}
+#barra-lateral ul{
+    list-style: none;
+}
+
+#barra-lateral li{
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 2px 3px black;  
+}
+
+#avengers-classic{
+    float: left;
+    margin-right: 30px;
+    height: 280px;
+}
+#indice{
+    border: 1px solid #00ffd7;
+    width: 200px;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: aliceblue;
+}
+#contenedor-logo{
+    float: right;
+    width: 320px;
+    text-align: center;
+    margin-left: 40px;
+    background-color: aliceblue;
+}
+#contenedor-logo img{
+    width: 70%;
+}
+#contenedor-logo ul{
+    list-style-type: none;
+    margin: 5px 10px 5px;
+    padding: 0px;
+}
+
+#contenedor-logo li{
+    margin-bottom: 5px;
+}
+
+#contenedor-logo p{
+    text-align: center;
+}
+.subtitulo-logo{
+    background-color: rgb(66, 25, 133);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#letra-chica-logo{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#imagen-lateral{
+    background-image: url(../IMG/avengers_full.png);
+    height: 1450px;
+    background-repeat: none;
+    float: right;
+    width: 40%;
+    background-size: cover;
+    margin-left: 40px;
+}
+
+#avengers-all{
+    background-image: url(../IMG/avengers-all.jpg);
+    background-repeat: none;
+    height: 630px;
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 80px;
+    background-attachment: fixed;
+    float: none;
+    
+}
+#lista-miembros{
+    border: solid black 2px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+
+}
+#torre-avengers{
+    background-image: url(../IMG/torre-vengadores.jpg);
+    background-size: cover;
+    padding: 40px;  
+}
+
+@media screen and (max-width: 1072px){
+    #barra-lateral{
+        width: 20%;
+    }
+    #header, #cuerpo{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 756px){
+    #barra-lateral{
+        width: 100%;
+    }
+    #barra-lateral img{
+        width: 50%;
+        margin: 30px auto 20px;
+        min-width: 270px;
+    }
+    #barra-lateral ul{
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 40px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+    #header, #cuerpo{
+        width: 100%;
+    }
+    #contenedor-logo{
+        width: 250px;
+    }
+    h1, h2{
+        text-align: center;
+    }
+    #avengers-all{
+        background-position-x: center;
+    }
+    #lista-miembros{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    #torre-avengers{
+        background-position: center;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    #contenedor-logo{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #avengers-classic{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+        border: 2px solid gold;
+        padding: 5px;
+    }
+    #imagen-lateral{
+        float: none;
+        width: 100%;
+        height: 500px;
+        margin: auto;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    #avengers-all{
+        background-position-x: center;
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+    #torre-avengers{
+        padding: 5px;
+    }
+    #lista-miembros h3{
+        font-size: 30px;
+    }
+    }
